@@ -6,60 +6,79 @@
     <title>Work 5</title>
     
     <style>
-     body {
-        font-family: 'Verdana', sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
 
-header {
-    background-color: #1a5f8d;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 20px
-    
-}
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
 
-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin: 20px 0;
-    
-}
+        .background-video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-img, video {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px; 
-}
+        header {
+            background-color: #1a5f8d;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+        }
 
-h2 {
-    margin-top: 20px;
-}
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
 
-.left-panel, .right-panel {
-    width: 48%;
-    box-sizing: border-box;
-    padding: 20px;
-    border-radius: 20px; 
-}
+        img, video {
+            max-width: 75%;
+            height: auto;
+            border-radius: 15px;
+        }
 
-.left-panel {
-    order: 2;
-    text-align: justify;
-}
+        h2 {
+            margin-top: 20px;
+        }
 
-</style>
+        .left-panel, .right-panel {
+            width: 48%;
+            box-sizing: border-box;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .left-panel {
+            order: 2;
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="background-video">
+        <video autoplay loop muted playsinline>
+            <source src="back.mp4" type="video/mp4">
+            <!-- Add additional source elements for different video formats if needed -->
+        </video>
+    </div>
 
     <header>
         <h1>Work 5: React Native App</h1>
@@ -82,17 +101,5 @@ h2 {
     <h2>Source Code : </h2>
     <div data-snack-id="@bammarisa/work5-marisa" data-snack-platform="mydevice" data-snack-preview="true" data-snack-theme="light" style="overflow:hidden;background:#fbfcfd;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
     <script async src="https://snack.expo.dev/embed.js"></script>
-<body style="margin: 0; overflow: hidden;">
-
-    <video autoplay loop muted style="width: 100%; height: 100%; object-fit: cover;">
-        
-        <source src="back.mp4" type="video/mp4">
-     
-    </video>
-
 </body>
-        <img src="Cute/bear.jpg" width="13%" />
-        
-        </body>
-    </body>
 </html>
